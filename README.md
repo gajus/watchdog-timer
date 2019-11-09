@@ -9,10 +9,15 @@
 
 Detects and notifies when program does not check-in within a timeout.
 
+* [Motivation](#motivation)
 * [API](#api)
 * [Example usage](#example-usage)
   * [Using watchdog-timer with `process.exit`](#using-watchdog-timer-with-processexit)
   * [Using watchdog-timer with Lightship](#using-watchdog-timer-with-lightship)
+
+## Motivation
+
+* [Ensuring healthy Node.js program using watchdog timer](https://dev.to/gajus/ensuring-healthy-node-js-program-using-watchdog-timer-4pjd)
 
 ## API
 
