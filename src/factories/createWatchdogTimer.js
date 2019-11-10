@@ -25,12 +25,12 @@ export default (configuration: WatchdogTimerConfigurationInputType): WatchdogTim
         routine();
       }
     }, configuration.timeout);
+
+    // $FlowFixMe
+    timeoutId.unref();
   };
 
   routine();
-
-  // $FlowFixMe
-  timeoutId.unref();
 
   const destroy = () => {
     if (!timeoutId) {
